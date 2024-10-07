@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced ZIP File Preview and Modify</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <p class="title">Upload, Preview, and Modify ZIP File</p>
+<div class="file-upload">
+      <label for="zipFileInput" class="file-upload-label">Upload ZIP File</label>
+      <input type="file" id="zipFileInput" class="file-upload-input" accept=".zip">
+          <button id="previewBtn">Preview</button>
+    <button id="clearBtn" class="btn-clear">Clear</button>
+    </div>
+    <div class="container-1">
+    <textarea id="output" placeholder="Extracted content will appear here..." ></textarea>
+    </div>
+     <h3 style="text-align: center; margin: 10px 0 10px 0;">Remove Text</h3>
+    <div class="center-container">
+      <input type="text" id="remover" placeholder="Text to remove">
+      <button id="changeBtn" class="btn-download">Remove Text</button>
+    </div>
+ <div class="container-1">
+        <textarea id="removeoutput" placeholder="Modified content will appear here..."readonly></textarea>
+        <a id="downloadLink" href="#" class="btn-download">Download Modified ZIP</a>
+    </div>
+    </div>
+    <p class="footor">&COPY; 2024 <a href="/">smart coder</a> All rights reserved.</p>
+</div>
+
+<script src="https://stuk.github.io/jszip/dist/jszip.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

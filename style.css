@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li, a{
+  list-style: none;
+  text-decoration: none;
+}
+.title{
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid blue;
+}
+.footor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  width: calc(100% - 20px);
+  text-align: center;
+  padding: 10px;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+}
+.footor a{
+  font-weight: bold;
+  color: #000;
+}
+.file-upload {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; 
+}
+.file-upload-input {
+    display: none;
+}
+.file-upload-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.file-upload-label:hover {
+    background-color: #0056b3;
+}
+.file-upload-label::after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.file-upload-input:focus + .file-upload-label,
+.file-upload-input:not(:placeholder-shown) + .file-upload-label::after {
+    content: ' File Selected';
+    color: #28a745;
+}
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#previewBtn {
+    background: linear-gradient(45deg, #4CAF50, #81C784); 
+    color: white;
+}
+.btn-clear {
+    background: linear-gradient(45deg, #f44336, #ef5350);
+    color: white;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+button:active {
+    transform: translateY(1px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+#output,
+#removeoutput,
+#addedoutput {
+    width: 80%;
+    height: 150px;
+    padding: 15px; 
+    border: none;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f8f9fa, #e2e6ea); 
+    font-size: 16px; 
+    margin-top: 20px;
+    color: #495057;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#output:focus {
+    box-shadow: 0 0 0 3px rgba(255, 0, 58, 0.38);
+    border: 1px solid #007bff;
+}
+#output::placeholder {
+    color: #6c757d;
+    opacity: 0.8;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  gap: 10px;
+}
+.input-added{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  gap: 10px;
+}
+
+.center-container input,
+.center-container button {
+  margin: 10px 0;
+}
+#remover{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+#added,
+#added-out{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-style: italic;
+  width: 30%;
+}
+#remover::placeholder{
+  font-style: normal;
+  color: #111;
+}
+
+.btn-download {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
+ .container-1 {
+   text-align: center;
+}
+.btn-download {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: white;
+   border-radius: 5px;
+}
+
+ .btn-download:hover {
+    background-color: #45a049;
+}
